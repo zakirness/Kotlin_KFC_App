@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RegistrActivity">
+
+    <TextView
+        android:id="@+id/tv_started_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+
+        android:fontFamily="@font/monserrat"
+        android:lineHeight="20dp"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_started_sub_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+
+        android:fontFamily="@font/monserrat"
+        android:lineHeight="20dp"
+        android:text="Заполните все поля для успешной регистрации"
+        android:textColor="@color/gray"
+
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_started_title" />
+
+    <EditText
+        android:id="@+id/loginRegInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:fontFamily="@font/monserrat"
+        android:hint="Придумайте логин"
+        android:inputType="textPersonName"
+
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_light"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameRegInputText" />
+
+    <EditText
+        android:id="@+id/passwordRegInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/monserrat"
+        android:hint="Придумайте пароль"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_light"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginRegInputText"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <EditText
+        android:id="@+id/nameRegInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:fontFamily="@font/monserrat"
+        android:hint="Напишите ваше имя"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_light"
+        app:layout_constraintBottom_toTopOf="@+id/loginRegInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_started_sub_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_registrInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/monserrat"
+        android:scaleY="1.2"
+        android:text="Регистрация"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toTopOf="@+id/btn_returnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_returnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/gray_light"
+        android:fontFamily="@font/monserrat"
+        android:scaleY="1.2"
+        android:text="Назад"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/tv_started_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+
+        android:fontFamily="@font/monserrat"
+        android:lineHeight="20dp"
+        android:text="Вход в приложение"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_started_sub_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+
+        android:fontFamily="@font/monserrat"
+        android:lineHeight="20dp"
+        android:text="Если у вас уже есть аккаунт - впишите логин и пароль."
+        android:textColor="@color/gray"
+
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_started_title" />
+
+    <EditText
+        android:id="@+id/loginInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/monserrat"
+        android:hint="Введите логин"
+        android:textColorHint="@color/gray_light"
+        android:inputType ="textNoSuggestions"
+
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_loginInput"
+        app:layout_constraintTop_toBottomOf="@+id/tv_started_sub_title"
+        app:layout_constraintVertical_bias="0.438"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/passwordInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray_light"
+        android:ems="10"
+        android:fontFamily="@font/monserrat"
+        android:hint="Okay, give me your password"
+        android:inputType ="textNoSuggestions"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_loginInput"
+        app:layout_constraintTop_toBottomOf="@+id/loginInputText"
+        app:layout_constraintVertical_bias="0.045"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_loginInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/monserrat"
+        android:scaleY="1.2"
+        android:text="Вход"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toTopOf="@+id/btn_returnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_returnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/gray_light"
+        android:fontFamily="@font/monserrat"
+        android:scaleY="1.2"
+        android:text="Назад"
+        android:textFontWeight="700"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
